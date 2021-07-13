@@ -12,6 +12,7 @@
 body {
    background-color :var(--preta);
    font-family: 'Times New Roman', Times, serif;
+   color:white;
 }
 
 header .container {
@@ -37,3 +38,28 @@ header nav a {
 header nav a:hover {
     color: #FFF;
 }
+
+/* Elementos do Filmes Principal */
+
+main .filme-principal {
+    font-size: 16px;
+    background-image: 
+        linear-gradient( rgba(0,0,0,.50),  rgba(0,0,0,.50) 100% ) ,
+        url('/img/rick_e_morty_backg01.jpg');    
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-content: flex-start;
+    
+}
+
+main .filme-principal .descricao {
+    margin-bottom: 40px;
+}
+
+main .filme-principal .titulo {
+    font-size: 40px;
+}
+
