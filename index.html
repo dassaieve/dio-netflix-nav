@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/7c75743715.js" crossorigin="anonymous"></script>
+    <!--Arquivos Externos-->
+
+        <!--Owl Carousel-->
+        <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
     <title>BOOK PUB</title>
 </head>
 <body>
@@ -26,21 +31,72 @@
             <div class="container">
                 <h3 class="titulo">Ricky & Morty</h3>
                 <p class="descricao">Rick é um velho mentalmente desequilibrado, mas cientificamente talentoso que se reconectou recentemente com sua família. Ele passa a maior parte do tempo envolvendo o jovem neto Morty em aventuras perigosas e estranhas no espaço e em universos alternativos. Compostos à vida familiar já instável de Morty, esses eventos causam muito sofrimento a Morty em casa e na escola.</p>
+                <div class="botoes">
+                    <button class="botao" role="button">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button class="botao" role="button">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
             </div>
-            <div class="botoes">
-                <button class="botao" role="button">
-                    <i class="fas fa-play"></i>
-                    ASSISTIR AGORA
-                </button>
-                <button class="botao" role="button">
-                    <i class="fas fa-info-circle"></i>
-                    MAIS INFORMAÇÕES
-                </button>
-            </div>
-
         </div>
-
     </main>
+    <article class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item" class="box-filme"><img src="img/min1.jpg"></div>
+            <div class="item" class="box-filme"><img src="img/min2.jpg"></div>
+            <div class="item" class="box-filme"><img src="img/min3.jpg"></div>
+            <div class="item" class="box-filme"><img src="img/min4.jpg"></div>
+            <div class="item" class="box-filme"><img src="img/min5.jpg"></div>
+            <div class="item" class="box-filme"><img src="img/min6.jpg"></div>
+            <div class="item" class="box-filme"><img src="img/min7.jpg"></div>
+            <div class="item" class="box-filme"><img src="img/min8.jpg"></div>
+            <div class="item" class="box-filme"><img src="img/min9.jpg"></div>
+            <div class="item" class="box-filme"><img src="img/min10.jpg"></div>
+            <div class="item" class="box-filme"><img src="img/min11.jpg"></div>
+            <div class="item" class="box-filme"><img src="img/min12.jpg"></div>
+            <div class="item" class="box-filme"><img src="img/min13.jpg"></div>
+            <div class="item" class="box-filme"><img src="img/min14.jpg"></div>
+            <div class="item" class="box-filme"><img src="img/min15.jpg"></div>
+            <div class="item" class="box-filme"><img src="img/min16.jpg"></div>
+        </div>
+    </article>
 
 </body>
+    <!--Scripts: devem ser carregados por último na página,
+         senão podem gerar erros no carregamento-->
+
+        <!--FontAwesome-->
+        <script src="https://kit.fontawesome.com/7c75743715.js" crossorigin="anonymous"></script>
+
+        <!--Owl Carousel-->
+        <script src="js/owl/jquery.min.js"></script>
+        <script src="js/owl/owl.carousel.min.js"></script>
+
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:false,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    300:{
+                        items:3
+                    },                
+                    600:{
+                        items:6
+                    },
+                    1000:{
+                        items:10
+                    }
+                }
+            })
+        </script>
+        
+
 </html>
