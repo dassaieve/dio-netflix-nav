@@ -17,7 +17,7 @@
 
 body {
    background-color :var(--preta);
-   font-family: 'Times New Roman', Times, serif;
+   font-family: Arial, Helvetica, sans-serif ;
    color:white;
 }
 
@@ -102,6 +102,13 @@ main .botao:hover {
 main .botao i {
     margin-right: 8px;
 }
+
+
+.carrosel-filmes {
+    margin-top: 5px;
+
+}
+
 
 .box-filme {
     height: 100%;
